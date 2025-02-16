@@ -3,22 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>Atelier GL2 | ex3</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     </head>
-    <body>
+    <body class="d-flex flex-column align-items-center bg-light">
+        <button class="btn btn-primary mb-3 mt-3" onclick="window.location.href='/'">Go Back</button>
 
-        <div class="todo-form">
-            <label for="todoName">Nom :</label><br>
-            <input type="text" id="todoName" placeholder="Nom de la tâche"><br>
-            <label for="todoContent">Contenu :</label><br>
-            <textarea id="todoContent" placeholder="Détails de la tâche"></textarea><br>
-            <button onclick="addTodo()" style="background-color: lightskyblue;">Ajouter Todo</button>
-            <div class="todo-container" id="todoContainer">
+        <div class="todo-form bg-white p-4 rounded shadow-sm mt-5" style="max-width: 400px; width: 100%;">
+            <div class="mb-3">
+                <label for="todoName" class="form-label">Nom :</label>
+                <input type="text" id="todoName" class="form-control" placeholder="Nom de la tâche">
             </div>
+            <div class="mb-3">
+                <label for="todoContent" class="form-label">Contenu :</label>
+                <textarea id="todoContent" class="form-control" placeholder="Détails de la tâche"></textarea>
+            </div>
+            <button onclick="addTodo()" class="btn btn-primary w-100">Ajouter Todo</button>
+            <div class="todo-container mt-3" id="todoContainer"></div>
         </div>
 
-
         <script src="main.js"></script>
-
     </body>
 </html>

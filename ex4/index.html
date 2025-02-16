@@ -2,21 +2,25 @@
 <html>
 <head>
   <title>Change Color on Click</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <style>
     li {
       cursor: pointer;
     }
   </style>
 </head>
-<body>
-  <ol id="list">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
+<body class="container bg-light mt-5">
+  <button class="btn btn-primary mb-3" onclick="window.location.href='/'">Go Back</button>
+  
+  <ol id="list" class="list-group">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item">Item 2</li>
+    <li class="list-group-item">Item 3</li>
+    <li class="list-group-item">Item 4</li>
+    <li class="list-group-item">Item 5</li>
   </ol>
 
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const list = document.getElementById("list");
 
